@@ -34,13 +34,13 @@ const showLocation = async (position) => {
   //store response object
   let data = await response.json();
   locationDiv.innerText = 
-  /*`${data.place_id},
-   ${data.address.road},
-   ${data.address.suburb},
-   ${data.address.city},
-   ${data.address.postcode},
-   ${data.address.state},
-   ${data.address.country}`;*/
    `${data.place_id},
-   ${data.display_name}`;
+    ${data.address.residential}, 
+    ${data.address.suburb}, 
+    ${data.address.city_district}, 
+    ${data.address.city}, 
+    ${data.address.municipality}, 
+    ${data.address.state_district}, 
+    ${data.address.state}, 
+    ${data.address.country}`;
 };
