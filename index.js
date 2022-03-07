@@ -35,12 +35,15 @@ const showLocation = async (position) => {
   let data = await response.json();
   locationDiv.innerText = 
    `${data.place_id},
-    ${data.address.residential}, 
+    ${data.display_name}`;
+/*
+${data.address.residential}, 
     ${data.address.suburb}, 
     ${data.address.city_district}, 
     ${data.address.city}, 
     ${data.address.municipality}, 
     ${data.address.state_district}, 
     ${data.address.state}, 
-    ${data.address.country}`;
+    ${data.address.country}
+*/
 };
